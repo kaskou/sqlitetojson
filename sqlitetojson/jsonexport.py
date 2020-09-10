@@ -58,7 +58,7 @@ class JsonExport:
             logging.info("Creation of the directory %s failed" % folder_name)
         logging.info("Successfully created the directory %s " % folder_name)
         file_name = folder_name + '/' + filename + '.json'
-        df_data.to_json(file_name, orient="split")
+        df_data.to_json(file_name, orient="records")
 
     def alltables(self):
         """
